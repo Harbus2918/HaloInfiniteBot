@@ -22,12 +22,13 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 
 OBJS = {
-    "Capture the Flag": ["Aquarius", "Argyle", "Empyrean", "Forbidden"],
+    "Capture the Flag": ["Aquarius", "Forbidden", "Fortress", "Origin"],
     "Oddball": ["Live Fire", "Recharge", "Streets"],
-    "Strongholds": ["Live Fire", "Recharge", "Solitude"],
+    "Strongholds": ["Live Fire", "Recharge"],
     "King of the Hill": ["Live Fire", "Recharge", "Solitude"],
+    "Neutral Bomb": ["Aquarius", "Fortress"],
 }
-SLAYER = ["Aquarius", "Live Fire", "Recharge", "Streets", "Solitude"]
+SLAYER = ["Aquarius", "Live Fire", "Origin", "Recharge", "Streets", "Solitude"]
 
 def pick_map(available_maps, picked_maps, last_n=2):
     """
