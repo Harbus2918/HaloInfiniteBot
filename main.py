@@ -55,7 +55,7 @@ def series(length, OBJS, SLAYER):
                 slayer_maps.remove(cur_map)
                 games.append(f"Slayer - {cur_map}")
         elif i == 5:
-            gt = random.choice(list(set(gts) - {'Capture the Flag'}))
+            gt = random.choice(list(set(gts) - set(picked_gt) - {'Capture the Flag'}))
             picked_gt.append(gt)
             cur_map = pick_map(temp_objs[gt], picked_maps, 1)
             if cur_map:
